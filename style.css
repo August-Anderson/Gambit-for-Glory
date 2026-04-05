@@ -1,0 +1,56 @@
+body /* whole page styling */ {
+    background-color:darkslategray;
+    color: gold;
+}
+
+.title /* Title styling */{
+     display: grid;
+  place-items: center;
+  height: 10vh;
+  font-size: 100px
+}
+
+.description /*Styles the front pages into */ {
+text-align: center;
+    font-size: 25px;
+}
+
+.embarkStyle /* Styles the homepage */  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.fightStyle /* Styles the battle page text #1 */ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeButton /* Styles the go home button */ {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    background-color: goldenrod;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.gameplay /* Overall main fight page 1 styling */ {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.go /*Embark Button Styling */ {
+    background-color: goldenrod;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+}

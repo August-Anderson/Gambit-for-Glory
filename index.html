@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gambit for Glory</title>
+</head>
+<body>
+    <!-- Title Screen -->
+    <div id="titlepage" class="embarkStyle"> 
+        <h1 class="title">Gambit for Glory</h1>
+        <h5 class="description">Gambit for Glory is a luck based game where you will try to fight through a series of 10 battles and try to emerge as the Glorious ruler of Crownshire.</h5>
+        <button onclick="goToGame()" class="go">Embark</button>
+    </div>
+
+    <!-- Battle Screen 1 -->
+    <div id="game1" style="display:none;" class="embarkStyle">
+        <h1>Welcome to your first Battle!</h1>
+        <h2>You will have to fight many others just like it. Good luck!</h2>
+        <button onclick="battle1()" class="go">Battle</button>
+    </div>
+
+    <!-- Battle Screen 2 -->
+    <div id="game2" style="display:none;" class="embarkStyle">
+        <h1>Welcome to your second Battle!</h1>
+        <h2>Hopefully you make it!</h2>
+        <button onclick="battle2()" class="go">Battle</button>
+    </div>
+
+    <!-- Battle Screen 3 -->
+    <div id="game3" style="display:none;" class="embarkStyle">
+        <h1>Welcome to your third Battle!</h1>
+        <h2>Impressive you made it this far! Can you keep it up?</h2>
+        <button onclick="battle3()" class="go">Battle</button>
+    </div>
+
+    <!-- Battle Screen 4 -->
+    <div id="game4" style="display:none;" class="embarkStyle">
+        <h1>Welcome to your fourth Battle!</h1>
+        <h2>Well done general! You are close to victory!</h2>
+        <button onclick="battle4()" class="go">Battle</button>
+    </div>
+
+    <!-- Battle Screen 5 -->
+    <div id="game5" style="display:none;" class="embarkStyle">
+        <h1>Welcome to your FIFTH AND FINAL Battle!</h1>
+        <h2>Will you be able to finally finish your conquest of Crownshire?</h2>
+        <button onclick="battle5()" class="go">Battle</button>
+    </div>
+
+    <!-- Win Screen 1 -->
+    <div id="winscreen" style="display:none;" class="embarkStyle">
+        <h1>You Won!</h1>
+        <button onclick="battleOn()" class="go">Next Battle</button>
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Win Screen 2 -->
+    <div id="winscreen2" style="display:none;" class="embarkStyle">
+        <h1>You Won!</h1>
+        <button onclick="battleOn2()" class="go">Next Battle</button>
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Win Screen 3 -->
+    <div id="winscreen3" style="display:none;" class="embarkStyle">
+        <h1>You Won!</h1>
+        <button onclick="battleOn3()" class="go">Next Battle</button>
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Win Screen 4 -->
+    <div id="winscreen4" style="display:none;" class="embarkStyle">
+        <h1>You Won!</h1>
+        <button onclick="battleOn4()" class="go">Next Battle</button>
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Final Win Screen -->
+    <div id="winscreen5" style="display:none;" class="embarkStyle">
+        <h1>Victory is Yours!!!</h1>
+        <p>You have done it my general! The people have elected you the new leader of Crownshire!</p>
+        <img src="crown_victory.jpg" alt="crown with jewels">
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Lose Screen -->
+    <div id="losescreen" style="display:none;" class="embarkStyle">
+        <h1>You Lost!</h1>
+        <button onclick="returnHome()" class="go">Go Home</button>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:999;"></canvas>
+
+    <button onclick="returnHome()" class="homeButton">Go Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
