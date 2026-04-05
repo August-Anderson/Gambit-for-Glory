@@ -27,7 +27,7 @@ function returnHome() {
 function battle1() {
     let result = Math.random();
     hideAll();
-    if (result > 0.5) { // TESTING - change back to 0.5 before release
+    if (result > 0) { // TESTING - change back to 0.5 before release
         document.getElementById("winscreen").style.display = "flex";
         document.body.style.backgroundColor = "forestgreen";
     } else {
@@ -39,7 +39,7 @@ function battle1() {
 function battle2() {
     let result = Math.random();
     hideAll();
-    if (result > 0.5) { // TESTING - change back to 0.5 before release
+    if (result > 0) { // TESTING - change back to 0.5 before release
         document.getElementById("winscreen2").style.display = "flex";
         document.body.style.backgroundColor = "forestgreen";
     } else {
@@ -51,7 +51,7 @@ function battle2() {
 function battle3() {
     let result = Math.random();
     hideAll();
-    if (result > 0.5) { // TESTING - change back to 0.5 before release
+    if (result > 0) { // TESTING - change back to 0.5 before release
         document.getElementById("winscreen3").style.display = "flex";
         document.body.style.backgroundColor = "forestgreen";
     } else {
@@ -63,7 +63,7 @@ function battle3() {
 function battle4() {
     let result = Math.random();
     hideAll();
-    if (result > 0.5) { // TESTING - change back to 0.5 before release
+    if (result > 0) { // TESTING - change back to 0.5 before release
         document.getElementById("winscreen4").style.display = "flex";
         document.body.style.backgroundColor = "forestgreen";
     } else {
@@ -75,7 +75,7 @@ function battle4() {
 function battle5() {
     let result = Math.random();
     hideAll();
-    if (result > 0.5) { // TESTING - change back to 0.5 before release
+    if (result > 0) { // TESTING - change back to 0.5 before release
         document.getElementById("winscreen5").style.display = "flex";
         document.body.style.backgroundColor = "gold";
         launchConfetti();
